@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Roboto+Slab:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hollow-button,
+.fill-button {
+  border-radius: 10px;
+  width: 200px;
+  height: 70px;
+  color: white;
+  font-size: 1.5rem;
+  border: #e77207 1px solid;
+  font-weight: 700;
+}
+
+.hollow-button {
+  background-color: transparent;
+}
+
+.hollow-button:hover {
+  background-color: #e77207;
+}
+
+.fill-button {
+  background-color: #e77207;
+}
+
+.fill-button:hover {
+  background-color: white;
+  border: black 1px solid;
+  color: black;
+}
+
+Body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: #101010;
+  color: white;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

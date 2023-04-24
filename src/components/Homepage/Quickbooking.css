@@ -1,0 +1,47 @@
+.quick-booking {
+  margin: 5%;
+  background-color: #1c1b1b;
+  padding: 7% 5%;
+  color: white;
+  display: grid;
+  gap: 5%;
+}
+
+.quick-booking form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 10%;
+}
+
+.form select,
+input {
+  border-radius: 10px;
+  /* width: 200px; */
+  height: 70px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  border: #e77207 1px solid;
+  background-color: transparent;
+  color: white;
+}
+
+select {
+  font-size: 1rem;
+  border: 5px solid #e77207;
+  border-radius: 30px 30px 30px 0px;
+}
+
+option {
+  font-size: 1rem;
+}
+
+.form select:focus,
+input:focus {
+  border: white 1px solid;
+  background-color: #1c1b1b;
+}
+
+input {
+  background-color: #e77207;
+}

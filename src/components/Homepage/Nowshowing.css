@@ -1,0 +1,31 @@
+.now-showing {
+  padding: 7% 10%;
+  color: white;
+}
+
+.map-showing {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 5%;
+}
+
+.each-movie-showing img {
+  width: 289px;
+  height: 350px;
+  border: 3px solid #e77207;
+}
+
+.each-movie-showing h1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+span {
+  font-size: 1rem;
+}
+
+/* .btn-now-showing {
+  clear: both;
+} */

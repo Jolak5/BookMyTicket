@@ -1,0 +1,11 @@
+.topnav {
+  background-color: #e77207;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: right;
+  height: 25px;
+  font-size: 12px;
+  gap: 10px;
+  padding-right: 119px;
+}
