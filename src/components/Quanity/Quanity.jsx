@@ -54,7 +54,7 @@ export default function Quanity() {
             <p>{totalChild}</p>
           </div>
         </div>
-        <NavLink to="seat">Continue</NavLink>
+        <div className="continue-container"> <NavLink className="continue-button" to={`seat`}>Continue</NavLink></div>
       </div>
 
       <Footer />

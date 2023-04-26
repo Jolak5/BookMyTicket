@@ -1,0 +1,85 @@
+.movie-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 3%;
+  padding: 5% 10%;
+  background-color: #1c1b1b;
+  /* margin-bottom: 8%; */
+}
+
+hr {
+  width: 0;
+}
+
+.location,
+.select-date,
+.select-theatre {
+  padding: 5% 10%;
+}
+
+.location h1,
+.select-date h1,
+.select-theatre h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.location select,
+.theatre select {
+  width: 500px;
+  height: 50px;
+  border: 3px solid #e77207;
+  border-radius: 30px 30px 30px 0px;
+  background-color: #1c1b1b;
+  color: white;
+  padding: 0 2%;
+}
+
+.select {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  padding: 3% 15%;
+}
+
+.select input {
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.select hr {
+  height: 20px;
+}
+
+.select-time {
+  border: 1px solid #ebebeb;
+  border-radius: 30px;
+  padding: 5%;
+  margin-top: 3%;
+}
+
+.time input {
+  background: transparent
+    linear-gradient(
+      150deg,
+      #e77207a8 0%,
+      #fb4e8004 80%,
+      #ff4d8000 100%,
+      #000000 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding-top: 20px;
+}
+
+.clock input {
+  width: 80px;
+}

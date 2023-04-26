@@ -9,7 +9,8 @@ export default function Bookings() {
     <div>
         <BookingHero />
         <Bookingdetails />
-        <NavLink to={`BookNow`}>Continue</NavLink>
+        <div className="continue-container"> <NavLink className="continue-button" to={`BookNow`}>Continue</NavLink></div>
+       
         <Footer />
     </div>
   )

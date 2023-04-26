@@ -5,7 +5,8 @@ export const QuanitySlice = createSlice({
   initialState: {
     adult: 0,
     children: 0,
-    totalChild: 0
+    totalChild: 0,
+    seatArrangment: []
   },
   reducers: {
     addAdult: (state) => {

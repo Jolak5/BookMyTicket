@@ -1,0 +1,36 @@
+.filled-information {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 20%;
+  background: #1c1b1b;
+  gap: 20px;
+}
+
+.filled-information div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filled-information hr {
+  width: 100%;
+}
+
+.ticket-table {
+  padding: 5% 20%;
+}
+
+table {
+  border: 1px solid white;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 30px 30px 30px 0px;
+  opacity: 0.36;
+  border: 2px solid #ffffff;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 20px;
+  opacity: 1;
+}

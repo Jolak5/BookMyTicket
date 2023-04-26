@@ -3,6 +3,7 @@ import "./Seat.css";
 import { SeatImage } from "../../assets/icon";
 import Footer from "../Footer/footer";
 import { Arrow } from "../../assets/icon";
+import { NavLink } from "react-router-dom";
 
 const Seat = () => {
   const times = 7; // Number of times to render the element
@@ -50,7 +51,7 @@ const Seat = () => {
       <p>Back</p>
 
       </div>
-      <button>Continue</button>
+      <div className="continue-container"> <NavLink className="continue-button" to={`ConfirmBooking`}>Continue</NavLink></div>
       <Footer />
     </div>
   );

@@ -45,6 +45,20 @@ Body {
   color: white;
 }
 
+.continue-container {
+  position: relative;
+  margin: 0 10% 5%;
+}
+
+.continue-button {
+  position: absolute;
+  padding-right: 10%;
+  right: 0;
+  border: 3px solid #e77207;
+  border-radius: 30px;
+  padding: 10px 40px;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
