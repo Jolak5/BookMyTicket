@@ -30,7 +30,7 @@ export default function NowShowing() {
           </div>
         ))}
       </div>
-      <div className="button-div">
+      <div className="show-more-button-div">
         <button
           className='hollow-button btn-now-showing'
           onClick={() => setState(state + 6)}

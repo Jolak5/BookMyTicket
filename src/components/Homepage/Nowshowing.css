@@ -29,12 +29,10 @@ span {
   font-size: 1rem;
 }
 
-.button-div {
-  clear: both;
-}
-
-.btn-now-showing {
-  clear: both;
+.show-more-button-div {
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
 }
 
 @media screen and (max-width: 900px) {

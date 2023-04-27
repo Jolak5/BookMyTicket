@@ -40,7 +40,7 @@ export default function Quickbooking() {
           <option value='Lagos'>7.00 PM</option>
           <option value='Lagos'>8.00 PM</option>
         </select>
-        <input type='submit' value='Submit' placeholder='Submit' />
+        <input className="submit-quick-booking-button" type='submit' value='Submit' placeholder='Submit' />
       </form>
     </div>
   );

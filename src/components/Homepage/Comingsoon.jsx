@@ -22,7 +22,7 @@ export default function Comingsoon() {
   const slicedList = movielist.slice(0, 20);
   const dispatch = useDispatch()
   return (
-    <div className='containter'>
+    <div className='container'>
       <h1>Coming Soon</h1>
     <Swiper
       className='swiper_container'

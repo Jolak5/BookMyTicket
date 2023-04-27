@@ -47,6 +47,16 @@ input {
   background-color: #e77207;
 }
 
+.submit-quick-booking-button {
+  background-color: #e77207;
+  border: none;
+}
+
+.submit-quick-booking-button:hover {
+  background-color: white;
+  color: #1c1b1b;
+}
+
 @media screen and (max-width: 900px) {
   .quick-booking {
     margin: 0;
