@@ -33,3 +33,14 @@ nav {
   fill: white;
   width: 20px;
 }
+
+@media screen and (max-width: 586px) {
+  header {
+    padding: 0 11px;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

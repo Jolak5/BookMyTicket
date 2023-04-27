@@ -5,10 +5,13 @@
 
 .map-showing {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
-  gap: 5%;
+}
+
+.each-movie-showing {
+  margin: 4% 5%;
 }
 
 .each-movie-showing img {
@@ -26,6 +29,21 @@ span {
   font-size: 1rem;
 }
 
-/* .btn-now-showing {
+.button-div {
   clear: both;
-} */
+}
+
+.btn-now-showing {
+  clear: both;
+}
+
+@media screen and (max-width: 586px) {
+  .now-showing {
+    /* padding: 7% ; */
+    color: white;
+  }
+  .map-showing {
+    grid-template-columns: 80%;
+    /* grid-template-rows: repeat(auto); */
+  }
+}

@@ -1,17 +1,69 @@
+import { Virtual } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
+
+// Import Swiper styles
+import './comingsoon.css'
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css";
+import "swiper/css/virtual";
+import "swiper/css/autoplay";
+import { useSelector } from "react-redux";
+// import { useState } from 'react';
+
 export default function Comingsoon() {
+  // const [state, setState] = useState(6);
+  const movielist = useSelector((state) => state.Movies.movieList);
+  const slicedList = movielist.slice(0, 20);
   return (
+    <div className='containter'>
+      <h1>Coming Soon</h1>
     <Swiper
+      className='swiper_container'
+      effect={"coverflow"}
+      // grabCursor={true}
+      centeredSlides={true}
+      loop={true}
       spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      slidesPerView={6}
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1.5
+      }}
+      pagination={{ el: ".swiper-pagination", clickable: true, Virtual }}
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        clickable: true
+      }}
+      autoplay={true}
+      modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ....
+      {slicedList.map((movie, index) => (
+        <SwiperSlide key={index} id={index} virtual>
+          <img src={movie.picture} alt='Movie poster' />
+          <div>
+          <p>
+            {movie.title} | <span>{movie.ratings}</span>
+          </p>
+          </div>
+        </SwiperSlide>
+      ))}
+      <div className='slider-controler'>
+        <div className='swiper-button-prev slider-arrow'>
+        <ion-icon name='arrow-back-outline'></ion-icon>
+      </div>
+      <div className='swiper-button-next slider-arrow'>
+        <ion-icon name='arrow-forward-outline'></ion-icon>
+      </div>
+        <div className='swiper-pagination'></div>
+      </div>
     </Swiper>
+    </div>
   );
 }

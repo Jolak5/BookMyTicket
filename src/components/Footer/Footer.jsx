@@ -14,22 +14,22 @@ export default function Footer() {
         </div>
       </div>
       <div>
-        <h1>Company</h1>
-        <p>About us</p>
+        <h1>Contact</h1>
+        <p>Self help</p>
         <p>FAQs</p>
         <p>Cinemas</p>
         <div>
-          <h5>Connect with us</h5>
+          <h5>Contact@bmt.com</h5>
         </div>
       </div>
       <div>
-        <h1>Company</h1>
+        <h1>Legal</h1>
         <p>About us</p>
         <p>FAQs</p>
         <p>Cinemas</p>
         <div>
           {" "}
-          <h5>Connect with us</h5>
+          <h5>Call: 234927489367</h5>
         </div>
       </div>
     </footer>

@@ -45,3 +45,12 @@ input:focus {
 input {
   background-color: #e77207;
 }
+
+@media screen and (max-width: 586px) {
+  .quick-booking form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10%;
+  }
+}

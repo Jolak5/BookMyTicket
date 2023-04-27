@@ -9,3 +9,14 @@
   gap: 10px;
   padding-right: 119px;
 }
+
+@media screen and (max-width: 586px) {
+  .topnav {
+    padding: 0 11px;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

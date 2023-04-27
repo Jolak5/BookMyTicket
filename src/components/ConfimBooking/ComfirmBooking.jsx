@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Arrow, Pen } from "../../assets/icon";
 import Footer from "../Footer/footer";
 import './Confirmbooking.css'
+import { NavLink } from "react-router-dom";
 
 export default function Comfirmbooking() {
   const [eachMovie] = useSelector((state) => state.Movies.eachMovie);
@@ -85,6 +86,8 @@ export default function Comfirmbooking() {
             </tbody>
         </table>
       </section>
+      <div className="continue-container"> <NavLink className="continue-button" to={`BookNow`}>Proceed to Payment</NavLink></div>
+
       <Footer />
     </div>
   );

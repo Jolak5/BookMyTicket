@@ -2,8 +2,9 @@ import { useSelector } from "react-redux";
 import "./Homepage.css";
 import Quickbooking from "./Quickbooking";
 import NowShowing from "./NowShowing";
-// import Comingsoon from "./Comingsoon";
+import Comingsoon from "./Comingsoon";
 import Footer from "../Footer/footer";
+// import Comingsoon from "./Comingsoon";
 
 
 export default function Homepage() {
@@ -31,9 +32,10 @@ export default function Homepage() {
         </div>
         <div className='overlay'></div>
       </div>
+      
       <Quickbooking />
       <NowShowing />
-      {/* <Comingsoon /> */}
+      <Comingsoon />
       
       <Footer />
     </div>
