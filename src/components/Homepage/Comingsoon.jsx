@@ -11,13 +11,16 @@ import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/virtual";
 import "swiper/css/autoplay";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from 'react-router-dom';
+import { renderEachMovie } from '../../redux/homepageSlice';
 // import { useState } from 'react';
 
 export default function Comingsoon() {
   // const [state, setState] = useState(6);
   const movielist = useSelector((state) => state.Movies.movieList);
   const slicedList = movielist.slice(0, 20);
+  const dispatch = useDispatch()
   return (
     <div className='containter'>
       <h1>Coming Soon</h1>
@@ -46,12 +49,19 @@ export default function Comingsoon() {
     >
       {slicedList.map((movie, index) => (
         <SwiperSlide key={index} id={index} virtual>
+          <NavLink
+              to={`/home/${movie.title}`}
+              onClick={() => {
+                dispatch(renderEachMovie(movie.ids));
+              }}
+            >
           <img src={movie.picture} alt='Movie poster' />
           <div>
           <p>
             {movie.title} | <span>{movie.ratings}</span>
           </p>
           </div>
+          </NavLink>
         </SwiperSlide>
       ))}
       <div className='slider-controler'>

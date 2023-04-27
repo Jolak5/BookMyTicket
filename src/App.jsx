@@ -15,6 +15,7 @@ import Bookings from "./components/Booking/Bookings";
 import Quanity from "./components/Quanity/Quanity";
 import Seat from "./components/Seat/Seat";
 import Comfirmbooking from "./components/ConfimBooking/ComfirmBooking";
+import Payment from "./components/Payment/Payment";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,8 @@ const router = createBrowserRouter(
       <Route path='/home/:id/BookNow' element={<Quanity />} />
       <Route path='/home/:id/BookNow/seat' element={<Seat />} />
       <Route path='/home/:id/BookNow/seat/ConfirmBooking' element={<Comfirmbooking />} />
+      <Route path='/home/:id/BookNow/seat/ConfirmBooking/payment' element={<Payment />} />
+
 
     </Route>
   )

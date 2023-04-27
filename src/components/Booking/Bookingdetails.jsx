@@ -50,7 +50,7 @@ export default function Bookingdetails() {
       <div className='select-date'>
         <h1>Select Date</h1>
         <div className='select'>
-          <input
+          <input className="input-date"
             type='button'
             name='24/03'
             value='24/03'
@@ -58,21 +58,21 @@ export default function Bookingdetails() {
             onClick={(e) => dispatch(bookDate(e.target.value))}
           />
           <hr />
-          <input
+          <input className="input-date"
             type='button'
             value='25/03'
             onClick={(e) => dispatch(bookDate(e.target.value))}
           />
           <hr />
 
-          <input
+          <input className="input-date"
             type='button'
             value='26.03'
             onClick={(e) => dispatch(bookDate(e.target.value))}
           />
           <hr />
 
-          <input
+          <input className="input-date"
             type='button'
             value='26.03'
             onClick={(e) => dispatch(bookDate(e.target.value))}

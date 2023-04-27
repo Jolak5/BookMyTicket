@@ -17,8 +17,11 @@ const Seat = () => {
 
   return (
     <div>
+      <div className="go-back-div">
       <Arrow />
       <h1>Seat Layout</h1>
+      </div>
+      
       <div>
         <p>Screen</p>
       <div className='seat-container'>

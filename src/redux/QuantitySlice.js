@@ -6,6 +6,7 @@ export const QuanitySlice = createSlice({
     adult: 0,
     children: 0,
     totalChild: 0,
+    totalAdult: 0,
     seatArrangment: []
   },
   reducers: {
@@ -23,6 +24,9 @@ export const QuanitySlice = createSlice({
     },
     totalChildren: (state) => {
       state.totalChild = state.children * 500;
+    },
+    totalAdultCount: (state) => {
+      state.totalAdult = state.adult * 1000;
     }
   }
 });
@@ -32,6 +36,7 @@ export const {
   subtractAdult,
   addChildren,
   subtractChildren,
-  totalChildren
+  totalChildren,
+  totalAdultCount
 } = QuanitySlice.actions;
 export default QuanitySlice.reducer;

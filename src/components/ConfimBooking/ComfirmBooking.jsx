@@ -17,8 +17,10 @@ export default function Comfirmbooking() {
 
   return (
     <div>
+      <div className="go-back-div">
       <Arrow />
       <h1>Confirm Booking</h1>
+      </div>
       <div
         className='hero'
         style={{
@@ -28,12 +30,16 @@ export default function Comfirmbooking() {
           height: "100vh"
         }}
       ></div>
-      <div>
+      <div className="title-div">
         <h1>{eachMovie.title}</h1>
+        <div> <h5>Action</h5> <hr /> <h5>PG15</h5></div>
+        <p>Action | PG15 </p>
+
       </div>
-      <Pen />
+      
 
       <section className='filled-information'>
+      <div className="edit-pen"><Pen /></div>
         <div>
           <p>Theatre:</p>
           <p>{theatre}</p>{" "}
@@ -55,9 +61,9 @@ export default function Comfirmbooking() {
         <hr />
       </section>
       <section className='snacks'>
-        <div>
+        {/* <div>
           <button>Drinks</button> <button>Snacks</button>
-        </div>
+        </div> */}
         <div>
           <img src='' alt='' />
           <img src='' alt='' />
@@ -79,14 +85,14 @@ export default function Comfirmbooking() {
             </thead>
             <tbody>
                 <tr><td>Movie Ticket</td> <td>Snacks</td></tr>
-                <tr><td>Movie Ticket</td> <td>Snacks</td></tr>
-                <tr><td>Movie Ticket</td> <td>Snacks</td></tr>
-                <tr><td>Movie Ticket</td> <td>Snacks</td></tr>
+                <tr><td>Snacks</td> <td>Snacks</td></tr>
+                <tr><td>Drinks</td> <td>Snacks</td></tr>
+                <tr><td>Total</td> <td>Snacks</td></tr>
                 
             </tbody>
         </table>
       </section>
-      <div className="continue-container"> <NavLink className="continue-button" to={`BookNow`}>Proceed to Payment</NavLink></div>
+      <div className="continue-container"> <NavLink className="continue-button" to={`payment`}>Proceed to Payment</NavLink></div>
 
       <Footer />
     </div>

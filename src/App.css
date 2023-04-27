@@ -47,7 +47,7 @@ Body {
 
 .continue-container {
   position: relative;
-  margin: 0 10% 5%;
+  margin: 5% 10% 20%;
 }
 
 .continue-button {
@@ -57,6 +57,18 @@ Body {
   border: 3px solid #e77207;
   border-radius: 30px;
   padding: 10px 40px;
+}
+
+.go-back-div {
+  padding: 5%;
+}
+
+.go-back-div svg {
+  width: 20px;
+}
+
+.go-back-div h1 {
+  font-size: 1.5rem;
 }
 
 .logo:hover {

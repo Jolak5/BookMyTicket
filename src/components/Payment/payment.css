@@ -1,0 +1,46 @@
+.form-container {
+  padding: 0 20%;
+  margin: 5% 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.cvv-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cvv-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    padding: 0 20%;
+    margin: 10% 0 20%;
+  }
+
+  .cvv-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

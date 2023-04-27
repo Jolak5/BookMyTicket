@@ -18,8 +18,9 @@
 .quantity-item {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20%;
   align-items: center;
+  height: 300px;
 }
 
 .ticket-button p {
@@ -39,4 +40,31 @@
 svg {
   width: 2rem;
   fill: white;
+}
+
+@media screen and (max-width: 900px) {
+  .choose-seat {
+    grid-template-columns: auto;
+    gap: 10%;
+  }
+
+  .quantity-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: max-content;
+    gap: 10px;
+  }
+
+  .ticket-button p {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    border: 2px solid var(--e77207);
+    border: 2px solid #e77207;
+    border-radius: 55px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
 }

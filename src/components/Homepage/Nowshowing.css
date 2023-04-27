@@ -37,7 +37,16 @@ span {
   clear: both;
 }
 
-@media screen and (max-width: 586px) {
+@media screen and (max-width: 900px) {
+  .map-showing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .now-showing {
     /* padding: 7% ; */
     color: white;

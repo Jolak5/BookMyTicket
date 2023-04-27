@@ -1,14 +1,17 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./Homepage.css";
 import Quickbooking from "./Quickbooking";
 import NowShowing from "./NowShowing";
 import Comingsoon from "./Comingsoon";
 import Footer from "../Footer/footer";
+import { NavLink } from "react-router-dom";
+import { renderEachMovie } from "../../redux/homepageSlice";
 // import Comingsoon from "./Comingsoon";
 
 
 export default function Homepage() {
   const latestMovie = useSelector((state) => state.Movies.latestmovie);
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -28,7 +31,12 @@ export default function Homepage() {
             {latestMovie.ratings}
           </p>
           <button className='hollow-button'>Watch Trailer</button>
-          <button className='fill-button'>Book Now</button>
+          <NavLink
+              to={`/home/${latestMovie.title}`}
+              onClick={() => {
+                dispatch(renderEachMovie(latestMovie.ids));
+              }}
+            ><button className='fill-button'>Book Now</button></NavLink>
         </div>
         <div className='overlay'></div>
       </div>
