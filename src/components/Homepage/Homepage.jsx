@@ -3,7 +3,7 @@ import "./Homepage.css";
 import Quickbooking from "./Quickbooking";
 import NowShowing from "./NowShowing";
 import Comingsoon from "./Comingsoon";
-import Footer from "../Footer/footer";
+import Footer from '../Footer/Footer'
 import { NavLink } from "react-router-dom";
 import { renderEachMovie } from "../../redux/homepageSlice";
 // import Comingsoon from "./Comingsoon";
