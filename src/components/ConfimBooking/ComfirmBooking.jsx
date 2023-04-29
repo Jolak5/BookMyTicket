@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { Arrow, Pen } from "../../assets/icon";
-import Footer from "../Footer/footer";
 import './Confirmbooking.css'
 import { NavLink } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 export default function Comfirmbooking() {
   const [eachMovie] = useSelector((state) => state.Movies.eachMovie);

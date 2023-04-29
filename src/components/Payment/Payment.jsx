@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { Arrow } from "../../assets/icon";
 import './payment.css'
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
+
 
 export default function Payment() {
   return <div>

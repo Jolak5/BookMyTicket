@@ -9,9 +9,9 @@ import {
 } from "../../redux/QuantitySlice";
 import "./Quantity.css";
 import { NavLink } from "react-router-dom";
-import Footer from "../Footer/footer";
 import { Arrow } from "../../assets/icon";
 import { useEffect } from "react";
+import Footer from "../Footer/Footer";
 
 export default function Quanity() {
   const adult = useSelector((state) => state.Quantity.adult);
