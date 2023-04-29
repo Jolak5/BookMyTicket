@@ -7,6 +7,7 @@ import Footer from "../Footer/footer";
 import { NavLink } from "react-router-dom";
 import { renderEachMovie } from "../../redux/homepageSlice";
 // import Comingsoon from "./Comingsoon";
+import 'hover.css/css/hover-min.css';
 
 
 export default function Homepage() {
@@ -36,7 +37,7 @@ export default function Homepage() {
               onClick={() => {
                 dispatch(renderEachMovie(latestMovie.ids));
               }}
-            ><button className='fill-button'>Book Now</button></NavLink>
+            ><button className='hover-shadow fill-button'>Book Now</button></NavLink>
         </div>
         <div className='overlay'></div>
       </div>

@@ -45,6 +45,7 @@ input:focus {
 
 input {
   background-color: #e77207;
+  cursor: pointer;
 }
 
 .submit-quick-booking-button {

@@ -32,11 +32,11 @@ button {
   background-color: #e77207;
 }
 
-.fill-button:hover {
+/* .fill-button:hover {
   background-color: white;
   border: black 1px solid;
   color: black;
-}
+} */
 
 Body {
   font-family: "Montserrat", sans-serif;

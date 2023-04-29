@@ -17,7 +17,13 @@ export const MovieSlice = createSlice({
     movieList: [],
     latestmovie: [],
     userDetails: [],
-
+    eachMovie: [
+      {
+        titles: "",
+        summary: "",
+        runtimes: ""
+      }
+    ],
     isLoading: true
   },
   reducers: {

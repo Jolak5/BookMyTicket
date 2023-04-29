@@ -4,27 +4,27 @@ export default function Quickbooking() {
   return (
     <div className='quick-booking'>
       <h1>Quick booking</h1>
-      <form action='#' className='form'>
-        <select name='' id=''>
-          <option value='Lagos'>Select Location</option>
+      <form action='/home/:id/BookNow/seat/ConfirmBooking/payment' className='form'>
+        <select name='' id='' required>
+          {/* <option value='Lagos'>Select Location</option> */}
           <option value='City'>City</option>
           <option value='Abuja'>Abuja</option>
           <option value='Ibadan'>Ibadan</option>
         </select>
-        <select name='' id=''>
-          <option value='Lagos'>Select Date</option>
+        <select name='' id='' required>
+          {/* <option value='Lagos'>Select Date</option> */}
           <option value='24/03'>24/03</option>
           <option value='25/03'>25/03</option>
           <option value='26/03'>26/03</option>
           <option value='27/03'>27/03</option>
         </select>
-        <select name='' id=''>
-          <option value='Lagos'>Select Movie</option>
+        <select name='' id='' required>
+          {/* <option value='Lagos'>Select Movie</option> */}
           <option value='Lagos'>Category</option>
           <option value='Lagos'>Category</option>
           <option value='Lagos'>Category</option>
         </select>
-        <select name='' id=''>
+        <select name='' id='' required>
           <option value='Lagos'>Select Theatre</option>
           <option value='FILM HOUSE CINEMA NEAR LANDMARK CENTER'>
             LANDMARK CENTER

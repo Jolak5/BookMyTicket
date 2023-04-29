@@ -48,7 +48,7 @@ export default function Comingsoon() {
       modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
     >
       {slicedList.map((movie, index) => (
-        <SwiperSlide key={index} id={index} virtual>
+        <SwiperSlide key={index} id={index} virtual="true">
           <NavLink
               to={`/home/${movie.title}`}
               onClick={() => {
