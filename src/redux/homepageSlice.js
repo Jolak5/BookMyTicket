@@ -52,7 +52,7 @@ export const MovieSlice = createSlice({
             ratings: item.rating.average
           };
         });
-        const singleMovie = data[0];
+        const singleMovie = data[12];
 
         return {
           ...state,
