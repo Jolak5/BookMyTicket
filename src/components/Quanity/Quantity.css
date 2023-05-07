@@ -1,7 +1,3 @@
-.quantity {
-  margin: 10% 5%;
-}
-
 .quantity h1 {
   font-size: 1.5rem;
 }
@@ -23,16 +19,24 @@
   height: 300px;
 }
 
+.quantity-item p {
+  height: 70px;
+  align-items: center;
+}
+
 .ticket-button p {
   border: 2px solid var(--e77207);
   border: 2px solid #e77207;
   border-radius: 55px;
   padding: 10px 70px;
+  height: 70px;
+  letter-spacing: 5px;
 }
 
 .ticket-button p button {
   background: #e77207 0% 0% no-repeat padding-box;
-  padding: 10px;
+  width: 45px;
+  height: 45px;
   border: none;
   border-radius: 100%;
 }

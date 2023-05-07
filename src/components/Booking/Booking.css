@@ -39,13 +39,19 @@ hr {
 
 .location select,
 .theatre select {
-  width: 45%;
+  width: 70%;
   height: 50px;
   border: 3px solid #e77207;
   border-radius: 30px 30px 30px 0px;
   background-color: #1c1b1b;
   color: white;
   padding: 0 2%;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .select {

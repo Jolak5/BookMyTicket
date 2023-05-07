@@ -49,7 +49,7 @@ export default function Quanity() {
             {/* adults buttons to count the number of adult child.  */}
             <p>
               <button onClick={() =>{ dispatch(subtractChildren()), dispatch(totalChildren())}}>-</button>
-              {children}{" "}
+                {children}{" "}
               <button
                 onClick={() => {
                   dispatch(addChildren()), dispatch(totalChildren());
